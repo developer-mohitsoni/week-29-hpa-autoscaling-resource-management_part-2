@@ -18,7 +18,7 @@ spec:
           ports:
             - containerPort: 3000
           resources:
-            requests:
-              cpu: '100m'
+            requests: # This line was modified to match the metrics-server deployment
+              cpu: '100m' # Adjusted to match the metrics-server request value 100m/1000 => 0.1 minumum
             limits:
               cpu: '300m'
